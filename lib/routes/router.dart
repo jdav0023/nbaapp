@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nbaapp/pages/home_page.dart';
+import 'package:nbaapp/pages/login_page.dart';
 import 'package:nbaapp/pages/teams_page.dart';
 import 'package:nbaapp/pages/players_page.dart';
 import 'package:nbaapp/pages/games_page.dart';
@@ -7,6 +8,8 @@ import 'package:nbaapp/routes/routing_constants.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
+    case LoginViewRoute:
+      return MaterialPageRoute(builder: (context) => LoginPage());
     case HomeViewRoute:
       return MaterialPageRoute(builder: (context) => HomePage());
     case TeamsViewRoute:
@@ -16,6 +19,6 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     case GamesViewRoute:
       return MaterialPageRoute(builder: (context) => GamesPage());
     default:
-      return MaterialPageRoute(builder: (context) => HomePage());
+      return MaterialPageRoute(builder: (context) => LoginPage());
   }
 }

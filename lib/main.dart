@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       title: 'NBA App',
       debugShowCheckedModeBanner: false,
       onGenerateRoute: router.generateRoute,
-      initialRoute: HomeViewRoute,
+      initialRoute: LoginViewRoute,
     );
   }
 }
