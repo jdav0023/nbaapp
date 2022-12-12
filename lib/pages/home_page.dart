@@ -74,7 +74,7 @@ class CustomButton extends StatelessWidget {
             children: [
               Icon(
                 icon,
-                size: 125,
+                size: 90,
                 color: Colors.grey.shade500,
               ),
               Text(
